@@ -1,4 +1,6 @@
+%
 %PREAMBLE
+%
 \documentclass[10pt,a4paper]{report}
 
 %Packages
@@ -12,8 +14,8 @@
 \usepackage{listings}
 \usepackage{xcolor}
 
-%Citations
-\usepackage[style=authoryear]{biblatex}
+%Citations (Vancouver style)
+\usepackage{biblatex}
 \addbibresource{references.bib}
 
 %Images and Graph Plots
@@ -55,6 +57,7 @@
 \hypersetup{pageanchor = true}
 
 \setlength{\parindent}{0mm}
+\setlength{\parskip}{2mm}
 
 %Document Information
 \title{}
@@ -75,21 +78,23 @@
 	\cleardoublepage
 	\pagenumbering{arabic}}
 
+%
 %DOCUMENT
+%
 \begin{document}
 	\frontmatter
 	\maketitle
-	
+
 	\begin{abstract}
 	\end{abstract}
-	
+
 	\tableofcontents
 	\lstlistoflistings
 	\mainmatter
-	
+
 	\begin{appendices}
 	\end{appendices}
-	
+
 	\printbibliography[title=References]
-	
+
 \end{document}
